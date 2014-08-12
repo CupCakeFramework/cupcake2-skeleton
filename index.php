@@ -1,8 +1,9 @@
 <?php
-
+namespace frontend;
 /* Desenvolvido por Ricardo Fiorani */
 //Inicialização do Framework em si
-require_once('framework/inicializarFramework.php');
+require 'vendor/autoload.php';
+require 'app/controllers/siteController.php';
 $_SITE = new Site();
 global $_SITE;
 ob_start();

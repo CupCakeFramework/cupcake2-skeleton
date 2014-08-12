@@ -4,6 +4,12 @@
     "require": {
         "ricardofiorani/cupcake2-framework": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "git://github.com/ricardofiorani/cupcake2-framework.git"
+        }
+    ],
     "license": "MIT",
     "authors": [
         {
