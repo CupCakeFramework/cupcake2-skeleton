@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <?php //echo $this->metatags() ?>
+        <?php echo $this->seo->metatags() ?>
         <!-- Bootstrap -->
         <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -19,9 +19,14 @@
         <![endif]-->
     </head>
     <body>
-        <?php
-        echo $conteudo;
-        ?>
+        <div class="container">
+            <div class="starter-template">
+                <h1>CupCake 2</h1>
+                <?php
+                echo $conteudo;
+                ?>
+            </div>
+        </div>
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

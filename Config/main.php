@@ -11,5 +11,6 @@ return array(
         'user' => 'root',
         'password' => '',
         'dbname' => 'cupcake2',
+        'charset' => 'utf8',
     ),
 );
