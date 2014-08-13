@@ -7,9 +7,14 @@
     "repositories": [
         {
             "type": "git",
-            "url": "git://github.com/ricardofiorani/cupcake2-framework.git"
+            "url": "git://github.com/CupCakeFramework/cupcake2-framework.git"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
     "license": "MIT",
     "authors": [
         {

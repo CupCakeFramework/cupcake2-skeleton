@@ -1,7 +1,15 @@
 <?php
-namespace frontend;
-use backend\Nucleo;
 
-class Site extends Nucleo {
-    public $template = 'template_truda';
+namespace App\Controllers;
+
+use CupCake2\Core\Nucleo;
+
+class SiteController extends Nucleo {
+
+    public $template = 'template_padrao';
+    
+    public function control_home(){
+        $this->renderizar('home');
+    }
+
 }

@@ -1,11 +1,13 @@
 <?php
-namespace frontend;
+
+namespace App;
+
 /* Desenvolvido por Ricardo Fiorani */
 //Inicialização do Framework em si
-require 'vendor/autoload.php';
-require 'app/controllers/siteController.php';
-$_SITE = new Site();
-global $_SITE;
+$config = require dirname(__FILE__) . '/Config/main.php';
+$autoload = require 'vendor/autoload.php';
+
+$app = new \App\Controllers\SiteController($config);
 ob_start();
-$_SITE->inicializar();
+$app->inicializar();
 ob_end_flush();
