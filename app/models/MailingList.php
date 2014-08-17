@@ -3,9 +3,9 @@
 namespace App\Models;
 
 /**
- * @Entity @Table(name="cup_newsletter")
+ * @Entity @Table(name="cup_mailing_list")
  * */
-class Newsletter {
+class MailingList {
 
     /** @Id @Column(type="integer") @GeneratedValue * */
     protected $id;
@@ -13,7 +13,7 @@ class Newsletter {
     /** @Column(type="string") * */
     protected $nome;
 
-    /** @Column(type="string") * */
+    /** @Column(type="string", unique=true) * */
     protected $email;
 
     public function getId() {

@@ -2,18 +2,16 @@
 
 namespace App\Controllers;
 
-use CupCake2\Core\CupCore;
+use CupCake2\Core\CupApp;
 
-class SiteController extends CupCore {
-
-    public $template = 'template_padrao';
+class SiteController extends CupApp {
 
     public function control_home() {
         $this->renderizar('home');
     }
 
-    public function control_teste_lelek(){
+    public function control_teste_lelek() {
         $this->renderizar('home');
     }
-    
+
 }
