@@ -12,7 +12,7 @@ class CupGaleria {
     /** @Id @Column(type="integer") @GeneratedValue * */
     protected $id;
 
-    /** @OneToMany(targetEntity="Imagem", mappedBy="galeria") */
+    /** @OneToMany(targetEntity="CupImagem", mappedBy="galeria") */
     private $imagens;
 
     public function __construct() {

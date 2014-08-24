@@ -8,7 +8,10 @@ use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 
-$paths = array("app/models","vendor/ricardofiorani/cupcake2-framework/src/models");
+$paths = array(
+    "app/models",
+    "vendor/cupcake-framework/cupcake2-framework/src/models",
+);
 $isDevMode = true;
 
 // the connection configuration

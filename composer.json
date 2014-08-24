@@ -1,9 +1,9 @@
 {
-    "name": "ricardofiorani/cupcake2-skeleton",
+    "name": "cupcake-framework/cupcake2-skeleton",
     "description": "Aplicação Esqueleto de CupCake 2",
     "require": {
-        "ricardofiorani/cupcake2-framework": "dev-master",
-        "doctrine/doctrine-fixtures-bundle": "2.2.*"
+        "cupcake-framework/cupcake2-framework": "dev-master",
+        "doctrine/data-fixtures": "1.0.*@dev"
 
     },
     "repositories": [

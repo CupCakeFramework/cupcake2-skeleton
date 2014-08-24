@@ -10,7 +10,7 @@ class CupImagem {
     /** @Id @Column(type="integer") @GeneratedValue * */
     protected $id;
 
-    /** @ManyToOne(targetEntity="Galeria") */
+    /** @ManyToOne(targetEntity="CupGaleria") */
     private $galeria;
 
     /**
