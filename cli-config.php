@@ -1,23 +1,14 @@
 <?php
 
-$configFile = require dirname(__FILE__) . '/Config/main.php';
-$autoload = require 'vendor/autoload.php';
-
-// replace with file to your own project bootstrap
 use Doctrine\ORM\Tools\Setup;
-use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
+use CupCake2\Core\CupCore;
 
-$paths = array(
-    "app/models",
-    "vendor/cupcake-framework/cupcake2-framework/src/models",
-);
+$environment = require dirname(__FILE__) . '/config/environment.php';
+$autoload = require 'vendor/autoload.php';
+$_GET['a'] = ''; //CupCore Requirement
+$bootstrapCore = new CupCore($environment);
+$paths = $bootstrapCore->db->getEntityPaths();
 $isDevMode = true;
-
-// the connection configuration
-$dbParams = $configFile['dbParams'];
-
 $config = Setup::createAnnotationMetadataConfiguration($paths, $isDevMode);
-$entityManager = EntityManager::create($dbParams, $config);
-
-return ConsoleRunner::createHelperSet($entityManager);
+return ConsoleRunner::createHelperSet($bootstrapCore->db->getEntityManager());

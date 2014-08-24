@@ -22,6 +22,9 @@ class UsuarioAdmin {
     /** @Column(type="string") * */
     protected $senha;
 
+    /** @Column(type="boolean") * */
+    protected $ativo;
+
     public function getNome() {
         return $this->nome;
     }
@@ -52,6 +55,14 @@ class UsuarioAdmin {
 
     public function setSenha($senha) {
         $this->senha = password_hash($senha, PASSWORD_DEFAULT);
+    }
+
+    public function getAtivo() {
+        return $this->ativo;
+    }
+
+    public function setAtivo($ativo) {
+        $this->ativo = $ativo;
     }
 
 }

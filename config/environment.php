@@ -2,6 +2,7 @@
 
 $baseUrl = str_replace('index.php', '', filter_input(INPUT_SERVER, 'SCRIPT_NAME'));
 return array(
+    'APP_INSTALL_SECRET' => 'a3s22d58w8q7d1v45s6a3',
     'BASE_URL' => $baseUrl,
     'SITE_URL' => 'http://' . filter_input(INPUT_SERVER, 'HTTP_HOST') . $baseUrl,
     'TITULO_SITE' => 'Projeto em CupCake2',
@@ -13,8 +14,8 @@ return array(
         'dbname' => 'cupcake2',
         'charset' => 'utf8',
     ),
-    'template_map' => array(
-        'layouts' => __DIR__ . '/../app/views/templates/',
-        'views' => __DIR__ . '/../app/views/',
+    'modules' => array(
+        'App',
+        'CupCake2',
     ),
 );
