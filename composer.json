@@ -3,6 +3,7 @@
     "description": "Aplicação Esqueleto de CupCake 2",
     "require": {
         "cupcake-framework/cupcake2-framework": "dev-master",
+        "cupcake-framework/cupcake2-painel": "dev-master",
         "doctrine/data-fixtures": "1.0.*@dev"
 
     },

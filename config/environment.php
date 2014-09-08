@@ -15,7 +15,8 @@ return array(
         'charset' => 'utf8',
     ),
     'modules' => array(
-        'App',
         'CupCake2',
+        'App',
+        'Painel',
     ),
 );
